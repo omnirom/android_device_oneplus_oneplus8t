@@ -1,0 +1,6 @@
+soong_namespace {
+    imports: [
+        "hardware/interfaces/boot/1.1/default",
+        "device/oneplus/oneplus8pro/gpt-utils"
+    ],
+}

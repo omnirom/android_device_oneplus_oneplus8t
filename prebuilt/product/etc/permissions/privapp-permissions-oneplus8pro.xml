@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="org.lineageos.frameratetile">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.BIND_QUICK_SETTINGS_TILE"/>
+    </privapp-permissions>
+</permissions>
