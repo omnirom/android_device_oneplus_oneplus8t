@@ -78,7 +78,7 @@ AB_OTA_UPDATER := true
 
 TARGET_RELEASETOOLS_EXTENSIONS ?= device/oneplus/oneplus8t/releasetools/
 
-DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus8pro/overlay/device
+DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus8t/overlay/device
 DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus8pro/overlay/common
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
@@ -86,6 +86,7 @@ $(call inherit-product, device/oneplus/oneplus8pro/qssi_whitelist.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, device/oneplus/oneplus8t/avb.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
+
 
 # get the rest of aosp stuff after ours
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
@@ -103,15 +104,15 @@ PRODUCT_NAME := omni_oneplus8t
 PRODUCT_DEVICE := oneplus8t
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := KB2005
+PRODUCT_MODEL := KB2003
 
 TARGET_DEVICE := OnePlus8T
 PRODUCT_SYSTEM_NAME := OnePlus8T
 
-VENDOR_RELEASE := 11/RP1A.201005.001/2011101425:user/release-keys
+VENDOR_RELEASE := 11/RP1A.201005.001/2011132154:user/release-keys
 BUILD_FINGERPRINT := OnePlus/OnePlus8T_EEA/OnePlus8T:$(VENDOR_RELEASE)
 OMNI_BUILD_FINGERPRINT := OnePlus/OnePlus8T_EEA/OnePlus8T:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'OnePlus8T-user 11 RP1A.201005.001 2011101425'"
+OMNI_PRIVATE_BUILD_DESC := "'OnePlus8T-user 11 RP1A.201005.001 2011132154'"
 
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-10-01
 
@@ -125,8 +126,8 @@ PRODUCT_ENFORCE_RRO_EXEMPTED_TARGETS := vendor
 
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 TARGET_SKIP_OTATOOLS_PACKAGE := false
-PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro
-
+PRODUCT_SOONG_NAMESPACES += vendor/oneplus/oneplus8t
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 $(call inherit-product, device/oneplus/oneplus8pro/qssi_whitelist.mk)
 
 $(call inherit-product, vendor/oneplus/oneplus8t/oneplus8t-vendor.mk)

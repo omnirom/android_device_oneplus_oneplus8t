@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device.mk \
+    $(LOCAL_DIR)/op8t.mk \
     $(LOCAL_DIR)/omni_oneplus8t.mk
 
 COMMON_LUNCH_CHOICES := \

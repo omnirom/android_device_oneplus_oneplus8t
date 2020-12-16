@@ -74,11 +74,11 @@ on post-fs
     # Vibrator
     chown system system /sys/class/leds/vibrator/gain
 
-service dashd /product/bin/dashd
-    class core
+#service dashd /product/bin/dashd
+#    class core
 #    critical
-    seclabel u:r:dashd:s0
-    group root system
+#    seclabel u:r:dashd:s0
+#    group root system
 
 service factory-hal-1-0 /system/bin/true
     disabled
@@ -92,8 +92,8 @@ on property:vendor.display.lcd_density=420
 service vendor.light-hal-2-0 /system/bin/true
     disabled
 
-#service vendor.lmvibrator-1-0 /system/bin/true
-#    disabled
+service vendor.lmvibrator-1-0 /system/bin/true
+    disabled
 
-#service vendor.qti.vibrator /system/bin/true
-#    disabled
+service vendor.qti.vibrator /system/bin/true
+    disabled

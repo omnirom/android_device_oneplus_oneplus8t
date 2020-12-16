@@ -26,38 +26,42 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus8t/prebuilt/product,product) \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus8t/prebuilt/root,root)
 
+PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := false
+
+#PRODUCT_PACKAGES += vintf
 PRODUCT_PACKAGES += fstab.postinstall
 PRODUCT_PACKAGES += bootctrl.op8t
 PRODUCT_PACKAGES += android.hardware.boot@1.1-service
 PRODUCT_PACKAGES += android.hardware.boot@1.1-impl
 PRODUCT_PACKAGES += android.hardware.boot@1.1-impl.recovery
 
-#PRODUCT_PACKAGES += android.hardware.vibrator@1.3-service.oneplus8pro
-#ifneq ($(filter $(ROM_BUILD_RADIO), true),)
-#AB_OTA_PARTITIONS += abl
-#AB_OTA_PARTITIONS += aop
-#AB_OTA_PARTITIONS += bluetooth
-#AB_OTA_PARTITIONS += cmnlib64
-#AB_OTA_PARTITIONS += cmnlib
-#AB_OTA_PARTITIONS += devcfg
-#AB_OTA_PARTITIONS += dsp
-#AB_OTA_PARTITIONS += featenabler
-#AB_OTA_PARTITIONS += hyp
-#AB_OTA_PARTITIONS += imagefv
-#AB_OTA_PARTITIONS += keymaster
-#AB_OTA_PARTITIONS += logo
-##AB_OTA_PARTITIONS += mdm_oem_stanvbk
-#AB_OTA_PARTITIONS += modem
-#AB_OTA_PARTITIONS += multiimgoem
-#AB_OTA_PARTITIONS += qupfw
-#AB_OTA_PARTITIONS += storsec
-##AB_OTA_PARTITIONS += spunvm
-##AB_OTA_PARTITIONS += reserve
-#AB_OTA_PARTITIONS += tz
-#AB_OTA_PARTITIONS += uefisecapp
-#AB_OTA_PARTITIONS += xbl_config
-#AB_OTA_PARTITIONS += xbl
-#endif
+ifneq ($(filter $(ROM_BUILD_RADIO), true),)
+AB_OTA_PARTITIONS += abl
+AB_OTA_PARTITIONS += aop
+AB_OTA_PARTITIONS += bluetooth
+AB_OTA_PARTITIONS += cmnlib64
+AB_OTA_PARTITIONS += cmnlib
+AB_OTA_PARTITIONS += devcfg
+AB_OTA_PARTITIONS += dsp
+AB_OTA_PARTITIONS += featenabler
+AB_OTA_PARTITIONS += hyp
+AB_OTA_PARTITIONS += imagefv
+AB_OTA_PARTITIONS += keymaster
+AB_OTA_PARTITIONS += logo
+#AB_OTA_PARTITIONS += mdm_oem_stanvbk
+AB_OTA_PARTITIONS += modem
+AB_OTA_PARTITIONS += multiimgoem
+AB_OTA_PARTITIONS += qupfw
+AB_OTA_PARTITIONS += storsec
+#AB_OTA_PARTITIONS += spunvm
+#AB_OTA_PARTITIONS += reserve
+AB_OTA_PARTITIONS += tz
+AB_OTA_PARTITIONS += uefisecapp
+AB_OTA_PARTITIONS += xbl_config
+#AB_OTA_PARTITIONS += xbl_config_lp5
+AB_OTA_PARTITIONS += xbl
+#AB_OTA_PARTITIONS += xbl_lp5
+endif
 #
 #$(call inherit-product, build/make/target/product/gsi_keys.mk)
 #

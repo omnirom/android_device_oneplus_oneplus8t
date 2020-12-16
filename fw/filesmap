@@ -47,5 +47,7 @@ reserve.bin /dev/block/bootdevice/by-name/reserve
 tz.bin /dev/block/bootdevice/by-name/tz
 uefisecapp.bin /dev/block/bootdevice/by-name/uefisecapp
 xbl_config.bin /dev/block/bootdevice/by-name/xbl_config
+xbl_config_lp5.bin /dev/block/bootdevice/by-name/xbl_config_lp5
 xbl.bin /dev/block/bootdevice/by-name/xbl
+xbl_lp5.bin /dev/block/bootdevice/by-name/xbl_lp5
 

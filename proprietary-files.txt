@@ -1,5 +1,3 @@
--sbin/dashd:/product/bin/dashd
-
 lib64/libcalibverif_jni.so
 lib/libcalibverif_jni.so
 

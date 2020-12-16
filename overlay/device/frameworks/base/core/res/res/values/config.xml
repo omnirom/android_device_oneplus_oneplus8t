@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <integer-array name="config_autoBrightnessLevels">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>160</item>
+        <item>320</item>
+        <item>640</item>
+        <item>1280</item>
+        <item>2000</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>9000</item>
+        <item>14000</item>
+        <item>20000</item>
+    </integer-array>
+    <integer-array name="config_ambientThresholdLevels">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>160</item>
+        <item>320</item>
+        <item>640</item>
+        <item>1280</item>
+        <item>2000</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>9000</item>
+        <item>14000</item>
+    </integer-array>
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>77000</item> <!-- 1 -->
+        <item>77000</item> <!-- 4 -->
+        <item>77000</item> <!-- 12 -->
+        <item>77000</item> <!-- 20 -->
+        <item>77000</item> <!-- 40 -->
+        <item>77000</item> <!-- 65 -->
+        <item>77000</item> <!-- 90 -->
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+    </integer-array>
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>77000</item>
+        <item>77000</item>
+        <item>77000</item>
+        <item>77000</item>
+        <item>77000</item>
+        <item>77000</item>
+        <item>77000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+    </integer-array>
+
+    <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
+         used for obtaining the first light sample when the device stops dozing.
+
+         Set this to -1 to disable this feature. -->
+    <integer name="config_autoBrightnessInitialLightSensorRate">1</integer>
+
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">57px</dimen>
+
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">25px</dimen>
+
+    <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
+    <bool name="config_displayBlanksAfterDoze">false</bool>
+
+    <!-- Default color for notification LED is blue. -->
+    <color name="config_defaultNotificationColor">#ff0000ff</color>
+
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">false</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option  -->
+    <bool name="config_intrusiveBatteryLed">false</bool>
+
+    <!-- Does device supports fast charging ?  -->
+    <bool name="config_FastChargingLedSupported">false</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
+    <bool name="config_multiColorNotificationLed">false</bool>
+
+    <!-- Show a custom view for FOD -->
+    <bool name="config_usesFOD">true</bool>
+
+    <!-- The default intensity level for haptic feedback. See
+         Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
+    <!-- The default intensity level for notification vibrations. See
+         Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultNotificationVibrationIntensity">3</integer>
+
+</resources>
