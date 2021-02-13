@@ -8,7 +8,6 @@ etc/nfcee_access.xml
 system/framework/qcnvitems.jar
 system/etc/permissions/qcnvitems.xml
 
--system/priv-app/OnePlusCamera/OnePlusCamera.apk
 -system/priv-app/OnePlusCameraService/OnePlusCameraService.apk
 
 etc/permissions/privapp-permissions-qti.xml
@@ -18,3 +17,7 @@ etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml
 -system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk;PRESIGNED
 -system/app/aptxals/aptxals.apk
 -system/etc/sysconfig/qti_whitelist.xml
+
+-system/priv-app/CameraPicProcService/CameraPicProcService.apk
+system/etc/permissions/com.oneplus.camera.service.xml
+
