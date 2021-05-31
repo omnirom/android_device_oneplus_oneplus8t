@@ -26,7 +26,7 @@ PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro/gpt-utils
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/image/oneplus/oneplus8t/vendor.img
 BOARD_PREBUILT_ODMIMAGE := vendor/image/oneplus/oneplus8t/odm.img
-TARGET_OTA_ASSERT_DEVICE := oneplus8t
+TARGET_OTA_ASSERT_DEVICE := oneplus8t,OnePlus8T
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(BOARD_PATH)/bluetooth
 
 TARGET_SYSTEM_PROP += $(BOARD_PATH)/system.prop
@@ -69,3 +69,7 @@ BOARD_PACK_RADIOIMAGES += storsec
 endif
 
 include device/oneplus/oneplus8pro/BoardConfig.mk
+
+TARGET_RECOVERY_UI_SCREEN_WIDTH := 1080
+TARGET_RECOVERY_UI_MARGIN_WIDTH := 30
+TARGET_RECOVERY_UI_FONT := device/oneplus/oneplus8t/recovery/font.png

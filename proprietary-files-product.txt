@@ -1,6 +1,6 @@
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+#-product/app/PowerOffAlarm/PowerOffAlarm.apk
 
 #system_ext/lib64/android.hidl.base@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
@@ -193,7 +193,7 @@ system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
 #system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 #system_ext/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so
+#system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 system_ext/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so
 system_ext/lib64/vendor.qti.hardware.cvp@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
@@ -271,7 +271,7 @@ system_ext/lib64/vendor.qti.latency@2.0.so
 system_ext/lib64/vendor.qti.qspmhal@1.0.so
 system_ext/lib64/vendor.qti.voiceprint@1.0.so
 -system_ext/app/uceShimService/uceShimService.apk
--system_ext/app/QColor/QColor.apk
+#-system_ext/app/QColor/QColor.apk
 -system_ext/app/NQNfcNci/NQNfcNci.apk
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk
 #-system_ext/app/ConfURIDialer/ConfURIDialer.apk
@@ -286,12 +286,12 @@ system_ext/lib64/vendor.qti.voiceprint@1.0.so
 #./system_ext/app/Rftoolkit/Rftoolkit.apk
 -system_ext/app/PerformanceMode/PerformanceMode.apk
 -system_ext/app/uimremoteclient/uimremoteclient.apk
--system_ext/app/workloadclassifier/workloadclassifier.apk
+#-system_ext/app/workloadclassifier/workloadclassifier.apk
 #-system_ext/app/QTIDiagServices/QTIDiagServices.apk
 -system_ext/app/QdcmFF/QdcmFF.apk
 -system_ext/app/QtiSystemService/QtiSystemService.apk
 -system_ext/app/embms/embms.apk
--system_ext/app/OPSoundTuner/OPSoundTuner.apk|74fb462adb0e4b5ed21eddbe0f3441d75e84290a
+#-system_ext/app/OPSoundTuner/OPSoundTuner.apk|74fb462adb0e4b5ed21eddbe0f3441d75e84290a
 #-system_ext/app/OPTelephonyCollectionData/OPTelephonyCollectionData.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/colorservice/colorservice.apk
@@ -647,7 +647,7 @@ system_ext/lib/vendor.qti.voiceprint@1.0.so
 system_ext/etc/inputmethod_duration_map.xml
 system_ext/etc/public.libraries-qti.txt
 system_ext/etc/hypnus_scene.conf
-system_ext/etc/bluetooth/bt_configstore.conf
+#system_ext/etc/bluetooth/bt_configstore.conf
 system_ext/etc/opadbd.rc
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/etc/hypnus/horae.data
@@ -713,8 +713,8 @@ system_ext/etc/seccomp_policy/wfdservice.policy
 system_ext/etc/seccomp_policy/qvr@2.0.policy
 system_ext/etc/seccomp_policy/perfservice.policy
 system_ext/etc/bluetooth/prj_sar.conf
-system_ext/etc/bluetooth/bt_profile.conf
-system_ext/etc/bluetooth/interop_database.conf
+#system_ext/etc/bluetooth/bt_profile.conf
+#system_ext/etc/bluetooth/interop_database.conf
 system_ext/etc/cdma_call_conf.xml
 #./system_ext/etc/spn-conf.xml
 #./system_ext/etc/sys_secrecy_switch_list.xml
@@ -755,7 +755,7 @@ system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
 -system_ext/priv-app/WfdService/WfdService.apk
 #./system_ext/priv-app/OPOmm/OPOmm.apk
 -system_ext/priv-app/OnePlusCamera/OnePlusCamera.apk
--system_ext/priv-app/OnePlusGallery/OnePlusGallery.apk
+#-system_ext/priv-app/OnePlusGallery/OnePlusGallery.apk
 #-system_ext/priv-app/subsdm/subsdm.apk
 -system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
 -system_ext/priv-app/daxService/daxService.apk

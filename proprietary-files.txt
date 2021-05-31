@@ -14,7 +14,7 @@ etc/permissions/privapp-permissions-qti.xml
 etc/permissions/privapp-permissions-oem-system.xml
 etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml
 
--system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk;PRESIGNED
+#-system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk;PRESIGNED
 -system/app/aptxals/aptxals.apk
 -system/etc/sysconfig/qti_whitelist.xml
 

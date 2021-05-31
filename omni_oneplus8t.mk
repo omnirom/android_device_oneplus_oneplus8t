@@ -47,6 +47,13 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system_ext \
     product
 
+
+ifeq ($(filter $(ROM_BUILDTYPE), GAPPS),)
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 660602880
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 660602880
+BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 660602880
+endif
+
 # tell update_engine to not change dynamic partition table during updates
 # needed since our qti_dynamic_partitions does not include
 # vendor and odm and we also dont want to AB update them
@@ -118,7 +125,10 @@ PLATFORM_SECURITY_PATCH_OVERRIDE := 2021-03-01
 
 TARGET_VENDOR := oneplus
 
-PRODUCT_ADB_KEYS := device/oneplus/oneplus7tpro/adbkey.pub
+# for bringup to disable secure adb - copy adbkey.pub from ~/.android
+PRODUCT_ADB_KEYS := device/oneplus/oneplus8t/adbkey.pub
+PRODUCT_PACKAGES += \
+    adb_keys
 
 PRODUCT_ENFORCE_RRO_TARGETS :=
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS := framework-res
@@ -132,6 +142,7 @@ TARGET_SKIP_OTATOOLS_PACKAGE := false
 PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro
 PRODUCT_SOONG_NAMESPACES += vendor/oneplus/oneplus8t
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/system/bt/conf
 
 $(call inherit-product, device/oneplus/oneplus8pro/qssi_whitelist.mk)
 

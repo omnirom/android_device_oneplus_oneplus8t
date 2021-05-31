@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := false
 
-#PRODUCT_PACKAGES += vintf
+PRODUCT_PACKAGES += remount
 PRODUCT_PACKAGES += fstab.postinstall
 PRODUCT_PACKAGES += bootctrl.op8t
 PRODUCT_PACKAGES += android.hardware.boot@1.1-service
