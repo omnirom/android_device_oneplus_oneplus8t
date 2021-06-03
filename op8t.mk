@@ -22,9 +22,9 @@
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/oneplus/oneplus8t/prebuilt/system,system) \
-    $(call find-copy-subdir-files,*,device/oneplus/oneplus8t/prebuilt/product,product) \
-    $(call find-copy-subdir-files,*,device/oneplus/oneplus8t/prebuilt/root,root)
+    $(call find-copy-subdir-files,*,device/oneplus/oneplus8pro/prebuilt/system,system) \
+    $(call find-copy-subdir-files,*,device/oneplus/oneplus8pro/prebuilt/product,product) \
+    $(call find-copy-subdir-files,*,device/oneplus/oneplus8pro/prebuilt/root,root)
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := false
 
