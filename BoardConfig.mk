@@ -26,7 +26,7 @@ PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro/gpt-utils
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/image/oneplus/oneplus8t/vendor.img
 BOARD_PREBUILT_ODMIMAGE := vendor/image/oneplus/oneplus8t/odm.img
-TARGET_OTA_ASSERT_DEVICE := oneplus8t,OnePlus8T
+TARGET_OTA_ASSERT_DEVICE := oneplus8t
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(BOARD_PATH)/bluetooth
 
 TARGET_SYSTEM_PROP += $(BOARD_PATH)/system.prop
