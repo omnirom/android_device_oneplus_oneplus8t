@@ -366,4 +366,6 @@
 
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">4</integer>
+
+    <bool name="config_proxiSensorWakupCheck">true</bool>
 </resources>
