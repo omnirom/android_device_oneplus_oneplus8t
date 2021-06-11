@@ -189,11 +189,6 @@ system_ext/lib64/vendor.qti.gnss@2.1.so
 system_ext/lib64/vendor.qti.gnss@3.0.so
 system_ext/lib64/vendor.qti.gnss@4.0.so
 system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
-#system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
-#system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
-#system_ext/lib64/vendor.qti.hardware.btconfigstore@1.0.so
-system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-#system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 system_ext/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so
 system_ext/lib64/vendor.qti.hardware.cvp@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
@@ -323,7 +318,6 @@ system_ext/bin/hans
 system_ext/bin/horae_ocrypt
 system_ext/bin/oem_on_gatekeeper_change.sh
 system_ext/bin/get-cplc
--system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
 -system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
 -system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
 #-system_ext/framework/op-telephony-common.jar
@@ -567,10 +561,6 @@ system_ext/lib/vendor.qti.gnss@2.1.so
 system_ext/lib/vendor.qti.gnss@3.0.so
 system_ext/lib/vendor.qti.gnss@4.0.so
 system_ext/lib/vendor.qti.hardware.alarm@1.0.so
-#system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
-#system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
-#system_ext/lib/vendor.qti.hardware.btconfigstore@1.0.so
-system_ext/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 system_ext/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so
 system_ext/lib/vendor.qti.hardware.cvp@1.0.so
 system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so
