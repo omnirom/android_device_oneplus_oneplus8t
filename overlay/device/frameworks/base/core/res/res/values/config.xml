@@ -346,29 +346,6 @@
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
 
-    <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">false</bool>
-
-    <!-- Default color for notification LED is blue. -->
-    <color name="config_defaultNotificationColor">#ff0000ff</color>
-
-    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">false</bool>
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option  -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
-
-    <!-- Does device supports fast charging ?  -->
-    <bool name="config_FastChargingLedSupported">false</bool>
-
-    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
-
-    <bool name="config_multiColorNotificationLed">false</bool>
-
-    <!-- Show a custom view for FOD -->
-    <bool name="config_usesFOD">true</bool>
-
     <!-- The default intensity level for haptic feedback. See
          Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
          meanings. -->
