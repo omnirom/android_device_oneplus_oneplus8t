@@ -18,22 +18,13 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-BOARD_PATH := device/oneplus/oneplus8t
-
-
-PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8t
-PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro/gpt-utils
+DEVICE_PATH := device/oneplus/oneplus8t
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/image/oneplus/oneplus8t/vendor.img
 BOARD_PREBUILT_ODMIMAGE := vendor/image/oneplus/oneplus8t/odm.img
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(BOARD_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
-TARGET_SYSTEM_PROP += $(BOARD_PATH)/system.prop
-
-#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/public
-#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/private
-#PRODUCT_PRIVATE_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy/product/priv
-#PRODUCT_PUBLIC_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy/product/public
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 OMNI_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=420
@@ -68,6 +59,9 @@ BOARD_PACK_RADIOIMAGES += storsec
 endif
 
 include device/oneplus/oneplus8pro/BoardConfig.mk
+
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += vendor/oneplus/oneplus8t
 
 TARGET_RECOVERY_UI_SCREEN_WIDTH := 1080
 TARGET_RECOVERY_UI_MARGIN_WIDTH := 30

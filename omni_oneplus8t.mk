@@ -140,11 +140,6 @@ DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := true
 TARGET_SKIP_OTATOOLS_PACKAGE := false
 
-PRODUCT_SOONG_NAMESPACES += device/oneplus/oneplus8pro
-PRODUCT_SOONG_NAMESPACES += vendor/oneplus/oneplus8t
-PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/system/bt/conf
-
 $(call inherit-product, device/oneplus/oneplus8pro/qssi_whitelist.mk)
 
 $(call inherit-product, vendor/oneplus/oneplus8t/oneplus8t-vendor.mk)
