@@ -20,15 +20,7 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
-    <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">9</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">10</integer>
-
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#FFFFFFE5</color>
     <dimen name="notification_panel_min_side_margin">80px</dimen>
-
-    <bool name="config_batteryPresentVisibility">true</bool>
 </resources>
-
-
