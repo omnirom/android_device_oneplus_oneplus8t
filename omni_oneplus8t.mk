@@ -83,7 +83,7 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 TARGET_BOOTANIMATION_SIZE := 1080p
 AB_OTA_UPDATER := true
 
-TARGET_RELEASETOOLS_EXTENSIONS ?= device/oneplus/oneplus8t/releasetools/
+#TARGET_RELEASETOOLS_EXTENSIONS ?= device/oneplus/oneplus8t/releasetools/
 
 DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus8t/overlay/device
 DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus8pro/overlay/common
