@@ -328,7 +328,7 @@ system_ext/bin/get-cplc
 -system_ext/framework/com.qti.location.sdk.jar
 -system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
--system_ext/framework/qti-telephony-common.jar|8d01f49efa20d96e038ceea30ea0945d47abaefb
+-system_ext/framework/qti-telephony-common.jar|a661e203141fac34a25f872729b8430d2b7c2878
 -system_ext/framework/uimservicelibrary.jar
 -system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
 -system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
